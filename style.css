@@ -36,6 +36,10 @@ input{
     color: white !important;
 }
 
+.btn:hover {
+    background-color: var(--dark-purple) !important;
+}
+
 button,
 #submit{
     background-color: var(--light-purple) !important;
@@ -44,6 +48,12 @@ button,
 #submit{
     outline: inherit;
     border: 1px solid var(--light-purple);
+    transition: all 0.3s;
+}
+
+#submit:hover{
+    background-color: var(--dark-purple) !important;
+    border: 1px solid var(--dark-purple);
 }
 
 textarea{
@@ -144,6 +154,9 @@ section{
     margin-top: 10px;
 }
 
+input {
+    color: black !important;
+}
 
 footer{
     background-color: #111619;
@@ -152,6 +165,10 @@ footer{
 
 .copyright span{
     color: var(--light-purple);
+}
+
+.email{
+    margin-left: 5px;
 }
 
 
@@ -186,6 +203,15 @@ footer{
     }
     .social-icons a{
         color: black !important;
+    }
+    .social-icons a:hover{
+        color: var(--light-purple) !important;
+    }
+}
+@media screen and (max-width: 900px){
+    footer{
+        flex-direction: column;
+        text-align: center;
     }
 }
 @media screen and (max-width: 800px){
@@ -224,5 +250,24 @@ footer{
     }
     .input-section input{
         width: 100% !important;
+    }
+}
+@media screen and (max-width: 500px){
+    #bottom-header{
+        padding: 10px 10px !important;
+    }
+    nav img{
+        width: 100px;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 375px){
+    nav img{
+        width: 50px;
+    }
+    #bottom-header{
+        padding: 10px 5px !important;
     }
 }
