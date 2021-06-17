@@ -158,6 +158,10 @@ input {
     color: black !important;
 }
 
+#submit{
+    color: white !important;
+}
+
 footer{
     background-color: #111619;
     color: #5e5e5e !important;
